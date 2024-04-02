@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.ans-row{
+    display: flex;
+}
+.answer{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 7px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: darkblue;
+    background-color: #2b95ff;
+}
+.question{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    transition: opacity 0.3s, visibility 0.3s; 
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal{
+    max-width: 880px;
+    width: 80%;
+    height: 100%;
+    max-height: 880px;
+    background-color: #f5f3ff;
+    border-radius: 32px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.show_static1{
+    background-color: #2b95ff;
+    border-radius: 60px;
+    border-bottom: darkblue;
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button{
+    background-color: #2b95ff;
+    border-radius: 50px;
+    border-bottom: darkblue;
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal-bth-close{
+    border-radius: 100px;
+    border-bottom: darkblue;
+    background-color: #2b95ff;
+    margin-top: 50px;
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.textF{
+    text-align: center;
+    font-size: 30px;
+}
+.marks{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sft, .sff{
+    font-size: 20px;
+}
+.textF{
+    margin-left: 30px;
+    margin-right: 30px;
+}
